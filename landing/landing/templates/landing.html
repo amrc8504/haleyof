@@ -1,0 +1,251 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Exclusive Creator Content</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <style>
+        body {
+            margin: 0;
+            font-family: Arial, sans-serif;
+            background: linear-gradient(135deg, #0f0f0f, #1a1a1a);
+            color: #ffffff;
+            text-align: center;
+        }
+
+        .container {
+            max-width: 600px;
+            margin: auto;
+            padding: 40px 20px 60px;
+            display: none;
+        }
+
+        /* HERO IMAGE */
+        .hero {
+            width: 100%;
+            height: 600px;
+            max-width: 520px;
+            margin: 0 auto 30px;
+            border-radius: 14px;
+            overflow: hidden;
+            box-shadow: 0 10px 30px rgba(0,0,0,0.6);
+        }
+
+        .hero img {
+            width: 100%;
+            display: block;
+        }
+
+        h1 {
+            font-size: 2.3rem;
+            margin-bottom: 12px;
+        }
+
+        p {
+            color: #cccccc;
+            margin-bottom: 35px;
+        }
+
+        .btn {
+            display: block;
+            margin: 22px auto; /* MORE SPACING */
+            padding: 16px 20px;
+            width: 85%;
+            max-width: 340px;
+            text-decoration: none;
+            font-weight: bold;
+            border-radius: 10px;
+            font-size: 1.05rem;
+            transition: 0.3s ease;
+        }
+
+        /* BRAND COLORS */
+        .of {
+            background: #00AFF0;
+            color: white;
+        }
+
+        .x {
+            background: #000000;
+            color: white;
+            border: 1px solid #444;
+        }
+
+        .reddit {
+            background: #ff4500;
+            color: white;
+        }
+
+        .btn:hover {
+            transform: translateY(-2px);
+            opacity: 0.9;
+        }
+
+        /* AGE GATE */
+        .age-gate {
+            position: fixed;
+            top: 0;
+            left: 0;
+            height: 100%;
+            width: 100%;
+            background: rgba(0,0,0,0.95);
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            z-index: 9999;
+        }
+
+        .age-box {
+            background: #111;
+            padding: 32px;
+            border-radius: 12px;
+            max-width: 400px;
+        }
+
+        .age-box h2 {
+            margin-bottom: 15px;
+        }
+
+        .age-btn {
+            margin: 12px;
+            padding: 12px 22px;
+            font-size: 1rem;
+            border-radius: 8px;
+            border: none;
+            cursor: pointer;
+        }
+
+        .yes {
+            background: #28a745;
+            color: white;
+        }
+
+        .no {
+            background: #dc3545;
+            color: white;
+        }
+
+        .disabled {
+            background: #555 !important;
+            color: #aaa !important;
+            cursor: not-allowed;
+            pointer-events: none;
+            opacity: 0.6;
+        }
+
+        .tooltip {
+    position: relative;
+    display: inline-block;
+}
+
+.tooltip-text {
+    visibility: hidden;
+    opacity: 0;
+    width: 220px;
+    background-color: #111;
+    color: #fff;
+    text-align: center;
+    padding: 10px 12px;
+    border-radius: 8px;
+    position: absolute;
+    bottom: 120%;
+    left: 50%;
+    transform: translateX(-50%);
+    box-shadow: 0 8px 25px rgba(0,0,0,0.6);
+    transition: opacity 0.3s ease;
+    font-size: 0.85rem;
+    z-index: 100;
+    pointer-events: none;
+}
+
+.tooltip-text::after {
+    content: "";
+    position: absolute;
+    top: 100%;
+    left: 50%;
+    transform: translateX(-50%);
+    border-width: 6px;
+    border-style: solid;
+    border-color: #111 transparent transparent transparent;
+}
+
+.tooltip:hover .tooltip-text {
+    visibility: visible;
+    opacity: 1;
+}
+
+    </style>
+</head>
+
+<body>
+
+<!-- AGE GATE -->
+<div class="age-gate" id="ageGate">
+    <div class="age-box">
+        <h2>🔞 18+ Only</h2>
+        <p>This page contains adult creator content.<br>You must be 18 or older to continue.</p>
+        <button class="age-btn yes" onclick="confirmAge()">I am 18 or older</button>
+        <button class="age-btn no" onclick="denyAge()">I am under 18</button>
+    </div>
+</div>
+
+<!-- MAIN CONTENT -->
+<div class="container" id="content">
+
+    <!-- HERO IMAGE -->
+    <div class="hero">
+        <!-- Replace this src with your actual photo -->
+        <img src="https://public.onlyfans.com/files/2/2o/2of/2ofnj52kysc6aiarvwsk0hbh5xm7jq3g1764101434/535905449/avatar.jpg" alt="HoneeBeeBaby">
+    </div>
+
+    <h1>🔥 HoneeBeeBaby 🔥</h1>
+    <p>NO PPV • Authentic Content • Weekly Content</p>
+
+    <a href="https://onlyfans.com/honeebeebabe" class="btn of" target="_blank">
+        💙 Subscribe on OnlyFans 💙
+    </a>
+
+    <a href="https://x.com/Hon3yBe3Baby" class="btn x" target="_blank">
+        Follow on X
+    </a>
+
+    <!-- <a href="https://reddit.com/u/Mr_Snowman2001" class="btn reddit" target="_blank">
+        View Reddit Profile
+    </a> -->
+
+    <div class="tooltip">
+    <a class="btn reddit disabled">
+        Reddit (Coming Soon)
+    </a>
+    <div class="tooltip-text">
+        Reddit promotions will be available soon.<br>
+        Follow on X for updates.
+    </div>
+</div>
+
+
+    <p style="font-size: 0.8rem; margin-top: 40px; color: #777;">
+        © 2025 • All rights reserved • 18+
+    </p>
+</div>
+
+<script>
+    function confirmAge() {
+        localStorage.setItem("ageVerified", "true");
+        document.getElementById("ageGate").style.display = "none";
+        document.getElementById("content").style.display = "block";
+    }
+
+    function denyAge() {
+        window.location.href = "https://www.google.com";
+    }
+
+    if (localStorage.getItem("ageVerified") === "true") {
+        document.getElementById("ageGate").style.display = "none";
+        document.getElementById("content").style.display = "block";
+    }
+</script>
+
+</body>
+</html>
