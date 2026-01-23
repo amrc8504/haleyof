@@ -1,4 +1,4 @@
 from django.shortcuts import render
 
 def landing_view(request):
-    return render(request, "landing.html")
+    return render(request, "landing2.html")
